@@ -18,8 +18,8 @@ La challenge era la seguente:
  *   4. Sistema di sorting per titolo e completamento (plus: permette di ordinare per parametri multipli contemporaneamente);
  *   5. Sistema che permette di filtrare le todo-list in base allo stato di completamento;
  *   6. Richiesto anche un sistema di impaginazione, Pagine che vanno mantenute anche dopo l’applicazione del filtro. 
- *      Inoltre deve esserci anche un campo di ricerca e l’utente deve poter filtrare, ordinare, impaginare e cercare CONTEMPORANEAMENTE.
- *   7. Attenzione anche a non resettare i dati se ci sono filtri, ricerca, sorting o impaginazioni attive in quel momento
+ *   7. Inoltre deve esserci anche un campo di ricerca e l’utente deve poter filtrare, ordinare, impaginare e cercare CONTEMPORANEAMENTE.
+ *   8. Attenzione anche a non resettare i dati se ci sono filtri, ricerca, sorting o impaginazioni attive in quel momento
  *
  * Per ottenere una risposta dovremo utilizzare la libreria fetch che si occupa di gestire le chiamate ai server,
  * mantenendo un approccio che prevede l'utilizzo della sintassi async/await e in modo da non mandare in crash
