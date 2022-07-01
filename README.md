@@ -3,7 +3,7 @@ Challenge Develhope 24.06.2022
 
 La challenge era la seguente:
 
-/**
+
  * Dobbiamo sviluppare un sistema di gestione per una todo-list.
  *
  * La nostra base dati è rappresentata da un'API raggiungibile a link:
