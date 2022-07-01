@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+}
+
+
+
+.fetch-error-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: stretch;
+
+}
+.fetch-error-content, .fetch-error-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.fetch-error-content{
+    gap: 20px;
+    padding: 0px 5px;
+}
+
+.fetch-error-emoji{
+    font-size: 5em;
+}
+.fetch-error-message{
+    font-size: 2.3em;
+}
+.fetch-error-code{
+    font-size: 1.5em;
+    color: #a04545;
+    font-weight: 600;
+}
+
+
+
+/* Da qui inizia il codice per modificare i componenti di boostrap */
+
+.table-title{
+    color: #969696;
+}
+
+.btn{
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    background-position: center;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+[data-filter="filterByName"]{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-sort-alpha-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z"/><path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zm-8.46-.5a.5.5 0 0 1-1 0V3.707L2.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L4.5 3.707V13.5z"/></svg>');
+}
+
+[data-filter="filterByName"].clicked{
+    background-color: #3492e6 !important;
+    box-shadow:  0 0 .25rem #3492e6 !important;
+    border: none;
+}
+
+[data-filter="filterShowTrue"]{
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'><path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/></svg>");
+}
+
+[data-filter="filterShowTrue"].clicked{
+    background-color: #198754 !important;
+    box-shadow:  0 0 .25rem #198754!important;
+    border: none;
+}
+
+[data-filter="filterShowFalse"]{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/></svg>');
+}
+
+[data-filter="filterShowFalse"].clicked{
+    background-color: #c23f3a !important;
+    box-shadow:  0 0 .25rem #c23f3a!important;
+    border: none;
+}
+
+[data-filter="filterOrderTrue"]{
+    background-image: url('data:image/svg+xml,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">  <image id="image0" width="50" height="50" x="0" y="0"    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAQAAAC0NkA6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmBhwWMhKfJLVDAAAA2UlEQVRYw+2VvQ3CMBCFXwJNWioaRqGlpmAFGlaBBibIAkwRIjEA9EgMABVVpI8iEuJHSQhxImTda5+tz+fz+YmUIiVypABKzMANJHR12rqQi2LHlI9O3BhLrKDsIn+DLDkBkDGVGHF2D4klhuyBucSAY04urbiG8s1XJhIRM4mI5GE6hUDGQpLosX0yW2j8mpDNywlagMDhrUxH8mnid4Wesw/S9IeyZGwKsWSsgMSWjPUbb8lYqY4mPi30LBl9liWjQVpT/9uFTf7k/6qkyXP2p/E+QTpIxjucC5+RgNPP/wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0yOFQyMDo1MDoxOCswMjowMN1KRXQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDYtMjhUMjA6NTA6MTgrMDI6MDCsF/3IAAAAAElFTkSuQmCC"/></svg>');
+}
+
+[data-filter="filterOrderTrue"].clicked{
+    background-color: #ffc107 !important;
+    box-shadow:  0 0 .25rem #ffc107!important;
+    border: none;
+}
+
+.bg-warning{
+    box-shadow: 0px 0px 5px #ffc104;
+}
+.bg-success{
+    box-shadow: 0px 0px 5px #198754;
+}
